@@ -1,7 +1,15 @@
+Membre du Groupe : 
+- KRETZ Henri 
+- MEYER Theo 
+- RAHBI Alexandre 
+- VERJUS Alicia 
+- ZANIN Julien
+
 Start the API server:
 ```
 uvicorn server.main:app --reload --host 127.0.0.1 --port 8000
 ```
+
 Rajouter un fichier api_secret.py avec
 "
 # Token for authentification
@@ -14,7 +22,6 @@ DATA_PATH = "server/data/historical_data/binance_btcusdt.json"
 BINANCE_WS_URL = "wss://stream.binance.com:9443/ws"
 " 
 
-
 Access the Swagger documentation: [ ](http://127.0.0.1:8000/docs)
 
 Test the endpoints:
@@ -25,7 +32,6 @@ Test the client with:
 ```
 python3 client.py
 ```
-
 ---
 
 ## Project Structure
