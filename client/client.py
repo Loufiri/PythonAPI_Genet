@@ -1,4 +1,3 @@
-import asyncio
 import websockets
 from api_secrets import AUTH_TOKEN
 from aiohttp import ClientSession

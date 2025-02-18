@@ -27,8 +27,7 @@ async def get_exchanges():
     """
     Returns the list of supported exchanges.
     """
-    return ["Binance"]
-
+    return ["Binance", "Kraken"]
 
 @router.get("/pairs/{exchange}", summary="Get trading pairs")
 async def get_pairs(exchange: str):
@@ -37,5 +36,7 @@ async def get_pairs(exchange: str):
     """
     if exchange.lower() == "binance":
         return ["BTC/USDT", "ETH/USDT"]
+    elif exchange.lower() == "kraken":
+        return ["XBT/USD", "ETH/USD"]
     else:
         raise HTTPException(status_code=404, detail=f"Exchange {exchange} not supported.")

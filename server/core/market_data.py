@@ -38,8 +38,9 @@ async def binance_order_book(symbol: str, output_file: str):
 
 
 async def collect_market_data():
-    """
-    Lance la collecte de données pour plusieurs paires et exchanges en parallèle.
-    """
-    tasks = [binance_order_book("btcusdt", f"{DATA_PATH}")]
+    tasks = [
+        binance_order_book("btcusdt", DATA_PATH),
+        kraken_order_book("XBT/USD", DATA_PATH_KRAKEN)
+    ]
     await asyncio.gather(*tasks)
+
