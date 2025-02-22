@@ -8,7 +8,7 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from api_secrets import AUTH_TOKEN, DATA_PATH
 
 from server.core.TWAPOrder import TWAPOrder
-from server.core.market_data import collect_market_data
+from server.core.market_data import collect_market_data, ensure_file_exists
 from server.websocket.websocket_manager import WebSocketManager
 
 router = APIRouter()
