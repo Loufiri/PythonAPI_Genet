@@ -17,10 +17,10 @@ Rajouter un fichier api_secret.py avec
 AUTH_TOKEN = "api_token"
 
 # Dossier où les données collectées seront sauvegardées
-DATA_PATH = "server/data/historical_data/binance_btcusdt.json"
+DATA_PATH = "server/data/historical_data/kraken_btcusdt.json"
 
 # URLs WebSocket pour les exchanges
-BINANCE_WS_URL = "wss://stream.binance.com:9443/ws"
+KRAKEN_WS_URL = "wss://ws.kraken.com"
 " 
 
 Access the Swagger documentation: [ ](http://127.0.0.1:8000/docs)
