@@ -2,7 +2,7 @@ Membre du Groupe :
 - KRETZ Henri 
 - MEYER Theo 
 - MOLINARD Matéo 
-- RAHBI Alexandre 
+- RABHI Alexandre 
 - VERJUS Alicia 
 - ZANIN Julien
 
